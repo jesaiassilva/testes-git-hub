@@ -3,10 +3,10 @@ def fatorial(a):
     Funcao para calcular o fatorial
     parametros a:int
     '''
-    f = 1
-    for i in range(a):
-        f *= i+1
-    return f
+    if a ==0:
+        return 1
+    else:
+        return a * fatorial(a-1)
 
 def soma(a):
     '''
